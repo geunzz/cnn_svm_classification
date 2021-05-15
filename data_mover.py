@@ -2,9 +2,9 @@ import shutil
 import os
 import random
 
-ORIGIN_PATH = 'C:/projects/dataset/Terravic Facial Infrared Database/origin_train/'
-MOVE_PATH = 'C:/projects/dataset/Terravic Facial Infrared Database/origin_test/'
-number_of_moving_data = 200
+ORIGIN_PATH = 'ORIGIN/PATH/TO/THE/IMAGE/'
+MOVE_PATH = 'NEW/PATH/TO/THE/IMAGE/'
+number_of_moving_data = 200 #number of images to be moved
 
 for class_name in os.listdir(ORIGIN_PATH):
     data_dir = ORIGIN_PATH + class_name + '/'
