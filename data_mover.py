@@ -18,3 +18,4 @@ for class_name in os.listdir(ORIGIN_PATH):
         else:
             os.mkdir(move_path)
             shutil.move(move_image_path, move_path)
+            
