@@ -2,7 +2,7 @@
 
 [code description]  
 ----------------------------------  
-This project was conducted as a final exam assignment. It is a project that BINARY CLASSIFY images of fire and without fire. It contains experimental code for the case of using CNN and the case of using CNN+ SVM together.  
+This project was conducted as a final exam assignment. It is a project that classify images of fire and without fire(binary classfication problem). It contains experimental code for the case of using CNN and the case of using CNN+ SVM together.  
 
 
 data_mover.py : Randomly transfers data to a specified path as many times as a given number.  
