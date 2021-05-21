@@ -1,5 +1,6 @@
 # cnn_svm_Classification
-[code description]
+[code description]  
+----------------------------------
 data_mover.py : Randomly transfers data to a specified path as many times as a given number.  
 data_generation.py : Load image data directly from a folder.   
 (Image files must be separated into folders for each class, and the upper folder must be designated.)  
