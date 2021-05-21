@@ -105,4 +105,3 @@ def func_import(test_data_num = 300):
 
     return X_train, X_test, Y_train, Y_test, X_train_image, X_test_image, Y_train_image, Y_test_image
 
-
