@@ -63,7 +63,7 @@ X_test_image =pickle_import.X_test_image
 Y_test_image = pickle_import.Y_test_image
 
 model = load_model('model.10.h5')
-model2 = Model(inputs=model.input, outputs=model.get_layer('dense').output)
+model2 = Model(inputs=model.input, outputs=model.layers[-2].output)
 model2.summary()
 
 features = model2.predict(X_test_image)
