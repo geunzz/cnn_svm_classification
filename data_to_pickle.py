@@ -34,3 +34,5 @@ for i in range(len(X_train_non)):
 
 with gzip.open('dataset_none.pickle', 'wb') as f:
     pickle.dump(dataset_none, f, pickle.HIGHEST_PROTOCOL)
+
+    
