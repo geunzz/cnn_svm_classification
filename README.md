@@ -1,6 +1,10 @@
-# cnn_svm_Classification
+# cnn_svm_Classification  
+
 [code description]  
-----------------------------------
+----------------------------------  
+This project was conducted as a final exam assignment. It is a project that BINARY CLASSIFY images of fire and without fire. It contains experimental code for the case of using CNN and the case of using CNN+ SVM together.  
+
+
 data_mover.py : Randomly transfers data to a specified path as many times as a given number.  
 data_generation.py : Load image data directly from a folder.   
 (Image files must be separated into folders for each class, and the upper folder must be designated.)  
