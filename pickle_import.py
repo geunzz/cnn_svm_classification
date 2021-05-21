@@ -57,7 +57,44 @@ def func_import(test_data_num = 300):
     random.shuffle(X_test_bef)
     random.shuffle(X_train_image_bef)
     random.shuffle(X_test_image_bef)
+    
+    #save the pickle file : randomly split train / test data
+    i = 0
+    train_bef = {}
+    for i in range(len(X_train_bef)):
+        name = 'train_' + str(i)
+        train_bef[name] = X_train_bef[i]
 
+    with gzip.open('train.pickle', 'wb') as f:
+        pickle.dump(train_bef, f, pickle.HIGHEST_PROTOCOL)
+
+    i = 0
+    test_bef ={}
+    for i in range(len(X_test_bef)):
+        name = 'test_' + str(i)
+        test_bef[name] = X_test_bef[i]
+
+    with gzip.open('test.pickle', 'wb') as f:
+        pickle.dump(test_bef, f, pickle.HIGHEST_PROTOCOL)
+
+    i = 0
+    train_image_bef = {}
+    for i in range(len(X_train_image_bef)):
+        name = 'train_img' + str(i)
+        train_image_bef[name] = X_train_image_bef[i]
+
+    with gzip.open('train_img.pickle', 'wb') as f:
+        pickle.dump(train_image_bef, f, pickle.HIGHEST_PROTOCOL)
+    
+    i = 0
+    test_image_bef = {}
+    for i in range(len(X_test_image_bef)):
+        name = 'test_img' + str(i)
+        test_image_bef[name] = X_test_image_bef[i]
+
+    with gzip.open('test_img.pickle', 'wb') as f:
+        pickle.dump(test_image_bef, f, pickle.HIGHEST_PROTOCOL)
+        
     for i in range(len(X_train_bef)):
         Y_train.append(X_train_bef[i][1]) #label
         X_train.append(X_train_bef[i][0]) #one dimension vector : (7500,)
